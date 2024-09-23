@@ -1,0 +1,66 @@
+.cover-rect {
+    position: relative;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.cover-rect:hover {
+    opacity: 0.9;
+    transition: all 0.15s ease-in-out 0.13s;
+}
+.cover-gradient {
+    width: 130px;
+    height: auto;
+    min-height: 150px;
+    border-radius: 10px;
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, rgba(17,16,16,0.99) 100%);
+}
+.discover-img {
+    width: 130px;
+    height: auto;
+    border-radius: 10px;
+}
+.discover-title {
+    position: absolute;
+    width: 130px;
+    bottom: 5px;
+    color: var(--whiteColor);
+    text-align: center;
+}
+.post-plus-rect {
+    position: absolute;
+    z-index: 100;
+    bottom: 60px;
+    width: 130px;
+    text-align: center;
+}
+.post-plus-img {
+    width: 50px;
+    height: auto;
+    cursor: pointer;
+}
+@media screen and (max-width: 768px) {
+    .cover-rect {
+        margin-right: 10px;
+    }
+    .cover-gradient {
+        width: 100px;
+        min-height: 120px;
+    }
+    .discover-img {
+        width: 100px;
+    }
+    .discover-title {
+        width: 100px;
+        bottom: 7px;
+        font-size: 13px;
+    }
+    .post-plus-rect {
+        bottom: 50px;
+        width: 100px;
+    }
+    .post-plus-img {
+        width: 40px;
+    }
+}

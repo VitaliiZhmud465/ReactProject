@@ -1,0 +1,62 @@
+.adver-widget {
+    border: 1px solid #c5c5c5;
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.adver-img {
+    width: 100%;
+    height: auto;
+}
+.adver-img:hover {
+    opacity: 0.9;
+}
+
+.adver-mobile-widget {
+    display: flex;
+    overflow: auto hidden;
+    white-space: nowrap;
+    margin-left: -10px;
+    margin-right: -10px;
+}
+.adver-mobile-one {
+    width: 100%;
+    min-width: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.adver-mobile-one:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.adver-mobile-rect {
+    border: 2px solid var(--borderColor);
+    text-align: center;
+    width: 100%;
+    min-width: 100%;
+    height: 350px;
+}
+.adver-mobile-img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+    display: block;
+    padding: 10px;
+    max-width: 100%;
+    max-height: 100%;
+}
+@media screen and (max-width: 768px) {
+    .adver-mobile-widget {
+        margin-left: -5px;
+        margin-right: -5px;
+    }
+    .adver-mobile-one {
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+   
+}

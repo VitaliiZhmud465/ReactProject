@@ -1,0 +1,12 @@
+.description-rect {
+    text-align: left;
+}
+
+.description-bottom {
+    width: 50px;
+    height: 2px;
+    background-color: var(--greyColor);
+    border-radius: 20px;
+    margin: auto;
+    margin-top: 25px;
+}

@@ -1,0 +1,65 @@
+.circle-image-button {
+    display: inline-block;
+    background-color: var(--whiteColor);
+    border-radius: 100%;
+    padding: 13px 5px 10px 5px;
+    text-align: center;
+    cursor: pointer;
+    margin: 10px;
+    width: 50px;
+    height: 50px;
+    transition: 200ms all ease;
+}
+.circle-image {
+    width: 50px;
+    height: auto;
+}
+.circle-image-button:hover {
+    background-color: #d3f1ff;
+}
+.feature-circle-rect {
+    width: 70px;
+    height: 70px;
+    padding: 13px 15px 0px 10px;
+    background-color: var(--navyColor);
+    
+    cursor: auto
+}
+.chat-circle-rect {
+    width: 70px;
+    height: 70px;
+    padding: 13px 15px 0px 10px;
+    background-color: var(--whiteColor);
+    cursor: auto
+}
+.feature-circle-rect:hover {
+    background-color: var(--navyColor);
+}
+.social-circle-rect {
+    box-shadow: 1px 4px 2px #99999994;
+}
+.social-circle-rect img {
+    width: 20px;
+}
+@media screen and (max-width: 768px) {
+    .circle-image-button {
+        padding:3px 8px;
+        margin: 8px;
+        width: 30px;
+        height: 30px;
+    }
+    .circle-image {
+        width: 30px;
+        height: auto;
+    }
+    .feature-circle-rect {
+        width: 40px;
+        height: 40px;
+        padding: 6px 36px 34px 8px;
+        background-color: var(--navyColor);
+        cursor: auto
+    }
+    .social-circle-rect img {
+        width: 16px;
+    }
+}

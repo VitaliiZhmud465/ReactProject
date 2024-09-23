@@ -1,0 +1,71 @@
+.customer-rect {
+    padding: 50px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+.branch-content {
+    border: 2px solid rgb(218, 216, 216);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px;
+    padding: 6px;
+}
+
+.branch-content:hover {
+    border: 2px solid rgb(216, 4, 4);
+}
+
+.image-wrapper {
+    position: relative;
+    /* Allows absolute positioning of the overlay */
+    display: inline-block;
+    /* Ensures it wraps the image correctly */
+}
+
+.branch-img {
+    width: 100%;
+    height: 230px;
+    display: block;
+    transition: opacity 0.6s ease;
+}
+
+.image-wrapper:hover {
+    background-color: rgb(204, 3, 3);
+    opacity: 0.9;
+}
+
+.image-wrapper:hover .branch-img {
+    opacity: 0.3;
+}
+
+.image-wrapper:hover::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 170px;
+    height: 170px;
+    transform: translate(-50%, -50%);
+    background-image: url('../../../assets/png/Centre.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+@media screen and (max-width: 768px) {
+    .customer-rect {
+        padding: 20px;
+    }
+
+    .branch-img {
+        width: 70px;
+        height: 70px;
+    }
+
+    .branch-content {
+        width: 300px;
+        margin-bottom: 10px;
+        font-size: 14px;
+        padding: 7px;
+    }
+}

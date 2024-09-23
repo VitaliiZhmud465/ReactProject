@@ -1,0 +1,450 @@
+/* ::-webkit-scrollbar {
+    width: 12px;
+    cursor: pointer;
+}
+
+::-webkit-scrollbar-track {
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-box-shadow: inset 0 0 6px rgb(0 0 0);
+}  */
+p {
+    margin-bottom: 0px;
+}
+
+.font-12 {
+    font-size: 12px;
+}
+
+.font-13 {
+    font-size: 13px;
+}
+
+.font-14 {
+    font-size: 14px;
+}
+
+.font-15 {
+    font-size: 15px;
+}
+
+.font-16 {
+    font-size: 16px;
+}
+
+.font-17 {
+    font-size: 17px;
+}
+
+.font-18 {
+    font-size: 18px;
+}
+
+.font-20 {
+    font-size: 20px;
+}
+
+.font-24 {
+    font-size: 24px;
+}
+
+.font-30 {
+    font-size: 30px;
+}
+
+.font-36 {
+    font-size: 36px;
+}
+
+.font-42 {
+    font-size: 32px;
+}
+
+.font-48 {
+    font-size: 42px;
+}
+
+.font-76 {
+    font-size: 76px;
+}
+
+.bold {
+    font-family: semiBoldFont;
+    letter-spacing: 1px;
+    color: #1a1919;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.white {
+    color: var(--whiteColor);
+}
+
+.blue {
+    color: var(--mainColor);
+}
+
+.darkBlue {
+    color: var(--darlBlueColor)
+}
+
+.darkPurple {
+    color: var(--darkPurple)
+}
+
+.black {
+    color: var(--darkGreyColor);
+}
+
+.red {
+    color: var(--redColor);
+}
+
+.mt--15 {
+    margin-top: -15px;
+}
+
+.mt-5 {
+    margin-top: 8px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+.mt-40 {
+    margin-top: 40px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-90 {
+    margin-top: 90px;
+}
+
+.mt-100 {
+    margin-top: 100px;
+}
+
+.mt-120 {
+    margin-top: 120px;
+}
+
+.mb-10 {
+    margin-bottom: 10px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-30 {
+    margin-bottom: 30px;
+}
+
+.mb-40 {
+    margin-bottom: 40px;
+}
+
+.mb-60 {
+    margin-bottom: 60px;
+}
+
+.mb-90 {
+    margin-bottom: 90px;
+}
+
+.mb-100 {
+    margin-bottom: 100px;
+}
+
+.mb-120 {
+    margin-bottom: 120px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-30 {
+    padding: 30px;
+}
+
+.p-40 {
+    padding: 40px;
+}
+
+.p-50 {
+    padding: 50px;
+}
+
+.pl-20 {
+    padding-left: 20px;
+}
+
+.pr-20 {
+    padding-right: 30px;
+}
+
+.pr-30 {
+    padding-right: 30px;
+}
+
+.pb-30 {
+    padding-bottom: 30px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: end;
+}
+
+.text-left {
+    text-align: start;
+}
+
+.text-italic {
+    font-style: italic;
+}
+
+.pointer {
+    cursor: pointer;
+}
+
+.bg-grey {
+    background-color: #F4F4F4;
+}
+
+.ant-divider-horizontal {
+    margin: 10px 0;
+}
+
+.home-input {
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 6px;
+}
+
+.phone-input {
+    border: 1px solid #D9D9D9;
+    border-radius: 6px;
+    padding: 9px 6px;
+    font-size: 14px;
+}
+
+.phone-input-error {
+    border: 1px solid #ff8787;
+    border-radius: 6px;
+    padding: 9px 6px;
+    font-size: 14px;
+}
+
+
+
+.phone-input.PhoneInput {
+    display: flex;
+}
+
+.phone-input .PhoneInputInput {
+    border: none;
+    outline: none;
+}
+
+.phone-input .PhoneInputInput:focus-visible {
+    border: none;
+    outline: none;
+}
+
+.phone-input.PhoneInput.PhoneInput--focus {
+    border-color: var(--mainColor);
+    border-right-width: 1px !important;
+    transition: all 0.3s;
+}
+
+.phone-input.PhoneInput.PhoneInput:hover {
+    border-color: var(--mainColor);
+    border-right-width: 1px !important;
+    transition: all 0.3s;
+    box-shadow: 0 0 0 2px rgb(96 168 220 / 20%);
+}
+
+.phone-input.PhoneInput .PhoneInputInput[disabled] {
+    cursor: not-allowed;
+    opacity: 1;
+}
+
+.PhoneInputCountrySelect {
+    display: none;
+}
+
+.PhoneInputCountryIcon {
+    width: 33px !important;
+    height: 20px !important;
+}
+
+.PhoneInputInput {
+    border: none;
+    background: transparent;
+}
+
+.PhoneInput:focus-visible {
+    outline: none;
+}
+
+.PhoneInputInput:focus-visible {
+    outline: none;
+}
+
+@media screen and (max-width: 768px) {
+    .font-12 {
+        font-size: 12px;
+    }
+
+    .font-13 {
+        font-size: 12px;
+    }
+
+    .font-14 {
+        font-size: 13px;
+    }
+
+    .font-15 {
+        font-size: 14px;
+    }
+
+    .font-16 {
+        font-size: 15px;
+    }
+
+    .font-17 {
+        font-size: 16px;
+    }
+
+    .font-18 {
+        font-size: 14px;
+    }
+
+    .font-20 {
+        font-size: 15px;
+    }
+
+    .font-24 {
+        font-size: 17px;
+    }
+
+    .font-30 {
+        font-size: 22px;
+    }
+
+    .font-36 {
+        font-size: 28px;
+    }
+
+    .font-42 {
+        font-size: 32px;
+    }
+
+    .mt-10 {
+        margin-top: 5px;
+    }
+
+    .mt-20 {
+        margin-top: 10px;
+    }
+
+    .mt-30 {
+        margin-top: 15px;
+    }
+
+    .mt-40 {
+        margin-top: 20px;
+    }
+
+    .mt-60 {
+        margin-top: 30px;
+    }
+
+    .mt-90 {
+        margin-top: 45px;
+    }
+
+    .mt-100 {
+        margin-top: 50px;
+    }
+
+    .mt-120 {
+        margin-top: 60px;
+    }
+
+    .ml-10 {
+        margin-left: 5px;
+    }
+
+    .p-20 {
+        padding: 10px;
+    }
+
+    .p-30 {
+        padding: 15px;
+    }
+
+    .p-40 {
+        padding: 20px;
+    }
+
+    .p-50 {
+        padding: 25px;
+    }
+
+    .pl-50 {
+        padding-left: 25px;
+    }
+
+    .pr-50 {
+        padding-right: 25px;
+    }
+
+    .pr-30 {
+        padding-right: 15px;
+    }
+
+    .pb-30 {
+        padding-bottom: 15px;
+    }
+
+    .home-input {
+        padding: 10px;
+        margin-top: 10px;
+        border-radius: 6px;
+    }
+}

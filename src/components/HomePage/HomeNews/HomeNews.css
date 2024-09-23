@@ -1,0 +1,57 @@
+.ant-carousel .slick-slide {
+    padding: 0 !important;
+    /* Ensure no padding is applied */
+    margin: 0 !important;
+    /* Ensure no margin is applied */
+}
+
+.news-rect {
+    padding: 50px 0px 50px 50px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+.custom-arrow {
+    transition: background 0.3s;
+}
+
+.next-arrow {
+    right: 10px;
+}
+
+.prev-arrow {
+    left: 10px;
+}
+
+.news-rect .ant-card-body {
+    padding: 0 !important;
+}
+
+.news-rect .ant-card-bordered {
+    border: none !important;
+}
+
+.slide-card {
+    position: relative;
+    overflow: hidden;
+    /* Ensure content doesn't overflow */
+}
+
+.slide-card .hover-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #002d52;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    /* Smooth transition */
+    z-index: 1;
+    /* Make sure it's on top */
+}
+
+.slide-card:hover .hover-overlay {
+    opacity: 0.7;
+    /* Adjust the opacity value as needed */
+}

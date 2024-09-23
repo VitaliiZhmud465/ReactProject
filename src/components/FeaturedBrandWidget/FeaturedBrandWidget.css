@@ -1,0 +1,18 @@
+.featured-brand-item {
+    text-align: center;
+}
+.featured-brand-item-img {
+    width: 100%;
+    height: auto;
+}
+.featured-brand-item-img:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: all 0.5s;
+}
+@media screen and (max-width: 768px) {
+    .featured-brand-item-img {
+        width: 70px;
+        height: auto;
+    }
+}

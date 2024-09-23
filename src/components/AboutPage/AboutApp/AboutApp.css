@@ -1,0 +1,30 @@
+.about-app-rect {
+    background-color: var(--navyColor);
+    width: 100%;
+    height: auto; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.about-app-main {
+    margin: auto;
+    max-width: 1600px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+@media screen and (max-width: 768px) {
+    .about-app-rect {
+        background-color: var(--navyColor);
+        background-image: none;
+        width: 100%;
+        height: auto;
+    }
+    .about-app-back-img {
+        width: 300px;
+        height: auto;
+    }
+    .about-app-user-img {
+        width: 200px;
+        height: auto;
+    }
+}

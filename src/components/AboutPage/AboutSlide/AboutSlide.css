@@ -1,0 +1,30 @@
+.about-slide {
+    padding-top: 120px;
+    background-image: url('../../../assets/png/slide-back.png');
+    height: auto; /* You must set a specified height */
+    background-position: center; /* Center the image */
+    background-repeat: repeat; /* Do not repeat the image */
+    background-size: cover;
+}
+.about-img-rect {
+    text-align: center;
+}
+.about-img {
+    width: 58%;
+    max-height: 497px;
+    height: auto;
+}
+.about-text-rect {
+    margin-top: 100px;
+    padding: 10px 60px;
+}
+@media screen and (max-width: 768px) {
+
+    .about-text-rect {
+        margin-top: 10px;
+        padding: 10px 30px;
+    }
+    .about-img-rect {
+        padding: 0px;
+    }
+}
