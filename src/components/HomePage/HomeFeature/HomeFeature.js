@@ -5,9 +5,9 @@ const HomeFeature = (props) => {
     const { style, content, btnTitle, bgBtn } = props;
     return (
         <div style={style}>
-          <Row justify="space-between" align="middle" className="feature-content">
+          <Row gutter={[16]} align="middle" className="feature-content">
             <Col>
-              <p className="font-24 bold white">{content}</p>
+              <p className="font-24 bold white text-center">{content}</p>
             </Col>
             <Col>
               <Button style={{ backgroundColor: bgBtn }} className="btn-feature">

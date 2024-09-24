@@ -44,17 +44,10 @@ const NavDrawer = () => {
       <div style={{ position: "absolute", bottom: 20, left: 0, right: 0 }}>
         <RoundButton
           onClick={() => {
-            history.push(ROUTE_LOGIN);
-          }}
-        >
-          Login
-        </RoundButton>
-        <RoundButton
-          onClick={() => {
             history.push(ROUTE_SIGNUP);
           }}
         >
-          Sign Up
+          REGISTER
         </RoundButton>
       </div>
     </nav>

@@ -1,5 +1,5 @@
 .customer-rect {
-    padding: 50px;
+    padding: 80px 50px;
     margin: auto;
     max-width: 1600px;
 }
@@ -17,10 +17,9 @@
 }
 
 .image-wrapper {
+    width: 100%;
     position: relative;
-    /* Allows absolute positioning of the overlay */
     display: inline-block;
-    /* Ensures it wraps the image correctly */
 }
 
 .branch-img {
@@ -52,20 +51,36 @@
     background-repeat: no-repeat;
 }
 
+@media screen and (max-width: 968px) {
+    .branch-content {
+        max-width: 325px;
+    }
+}
+
 @media screen and (max-width: 768px) {
     .customer-rect {
-        padding: 20px;
-    }
-
-    .branch-img {
-        width: 70px;
-        height: 70px;
+        padding: 50px 20px;
     }
 
     .branch-content {
-        width: 300px;
+        max-width: 325px;
         margin-bottom: 10px;
         font-size: 14px;
         padding: 7px;
     }
+
+    .responsive-row {
+        justify-content: center !important;
+    }
+}
+
+@media screen and (max-width: 692px) {
+    .branch-img {
+        height: auto !important;
+    }
+
+    .branch-content {
+        max-width: 100%;
+    }
+
 }

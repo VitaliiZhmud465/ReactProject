@@ -23,10 +23,9 @@
     right: 0px;
     text-align: center;
     margin: auto;
-    background-color: var(--mainColor);
     z-index: 999;
     transition: all 0.35s ease-in-out 0s;
-    box-shadow: rgb(43 83 135 / 8%) 0px 0px 8px 0px;
+    /* box-shadow: rgb(43 83 135 / 8%) 0px 0px 8px 0px; */
 }
 
 .login-nav.nav-active {
@@ -54,7 +53,7 @@
 }
 
 .custom-drawer .ant-drawer-content {
-    background: var(--mainColor);
+    background: var(--whiteColor);
 }
 
 .custom-drawer .ant-drawer-body {
@@ -163,7 +162,7 @@
 
 @media screen and (max-width: 768px) {
     .nav {
-        background-color: transparent;
+        background: var(--lightGreyColor);
         padding: 15px;
     }
 

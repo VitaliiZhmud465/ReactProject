@@ -1,5 +1,5 @@
-import React from 'react';
-import { Card, Row, Col } from 'antd';
+import React, { useState, useRef } from 'react';
+import { Button, Card, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 import './HomeNews.css';
 import Slider from "@ant-design/react-slick";
@@ -17,178 +17,246 @@ import News7 from "../../../assets/png/news7.jpg";
 import News8 from "../../../assets/png/news8.jpg";
 import News9 from "../../../assets/png/news9.jpg";
 
+// Storing reference for prev arrow click handler
+let prevArrowClickHandler = null;
+
 const NextArrow = ({ onClick }) => (
   <div className="custom-arrow next-arrow" onClick={onClick} style={arrowStyle}>
-    →
   </div>
 );
 
-const PrevArrow = ({ onClick }) => (
-  <div className="custom-arrow prev-arrow" onClick={onClick} style={arrowStyle}>
-    ←
-  </div>
-);
+const PrevArrow = ({ onClick }) => {
+  prevArrowClickHandler = onClick;
+  return (
+    <div className="custom-arrow prev-arrow" onClick={onClick} style={arrowStyle}>
+    </div>
+  );
+};
 
 const arrowStyle = {
-    display: 'flex',
-    alignItems: 'center',
-    justifyContent: 'center',
-    fontSize: '24px',
-    color: '#fff',
-    background: 'rgba(0, 0, 0, 0.5)', // Background color for visibility
-    borderRadius: '50%',
-    width: '40px',
-    height: '40px',
-    position: 'absolute',
-    top: '50%',
-    transform: 'translateY(-50%)',
-    zIndex: 1,
-    cursor: 'pointer',
+  display: 'none',
 };
 
 const HomeNews = () => {
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        nextArrow: <NextArrow />,
-        prevArrow: <PrevArrow />
-    };
+  const sliderRef = useRef(null);
 
-    const newsItems = [
-        {
-        title: 'CHAMPIONSHIP COACH ELEVATES INTO NEW ROLE',
-        date: 'Wed - Aug 28 - 2024',
-        author: 'Lara',
-        imageUrl: News1,
-        authorUrl:News1,
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    responsive: [
+      {
+        breakpoint: 1024, // Screen width < 1024px
+        settings: {
+          slidesToShow: 2, // Show 2 slides for screen widths < 1024px
+          slidesToScroll: 1,
         },
-        {
-        title: 'RECAP NBL1 WEST | MEN\'S GRAND FINAL',
-        date: 'Mon - Aug 26 - 2024',
-        author: 'Shiburu',
-        imageUrl: News2,
-        authorUrl:News2,
+      },
+      {
+        breakpoint: 768, // Screen width < 768px
+        settings: {
+          slidesToShow: 1, // Show 1 slide for screen widths < 768px
+          slidesToScroll: 1,
         },
-        {
-        title: 'PLAYERS REWARDED WITH CHAMPIONSHIP',
-        date: 'Fri - Aug 23 - 2024',
-        author: 'Chris Pike',
-        imageUrl: News3,
-        authorUrl:News3,
-        },
-        {
-        title: 'PROMISE TO BRING CHAMPIONSHIP',
-        date: 'Wed - Aug 20 - 2024',
-        author: 'Cherry',
-        imageUrl: News4,
-        authorUrl:News4,
-        },
-        {
-        title: 'PROMISE TO BRING CHAMPIONSHIP',
-        date: 'Wed - Aug 20 - 2024',
-        author: 'Cherry',
-        imageUrl: News5,
-        authorUrl:News5,
-        },
-        {
-        title: 'PROMISE TO BRING CHAMPIONSHIP',
-        date: 'Wed - Aug 20 - 2024',
-        author: 'Cherry',
-        imageUrl: News6,
-        authorUrl:News6,
-        },
-        {
-        title: 'PROMISE TO BRING CHAMPIONSHIP',
-        date: 'Wed - Aug 20 - 2024',
-        author: 'Cherry',
-        imageUrl: News7,
-        authorUrl:News7,
-        },
-        {
-        title: 'PROMISE TO BRING CHAMPIONSHIP',
-        date: 'Wed - Aug 20 - 2024',
-        author: 'Cherry',
-        imageUrl: News8,
-        authorUrl:News8,
-        },
-        {
-        title: 'PROMISE TO BRING CHAMPIONSHIP',
-        date: 'Wed - Aug 20 - 2024',
-        author: 'Cherry',
-        imageUrl: News9,
-        authorUrl:News9,
-        },
-    ];
+      },
+    ],
+  };
 
-    return (
-        <div className="news-rect">
+  const newsItems = [
+    {
+      title: 'CHAMPIONSHIP COACH ELEVATES INTO NEW ROLE',
+      date: 'Wed - Aug 28 - 2024',
+      author: 'Lara',
+      imageUrl: News1,
+      authorUrl: News1,
+    },
+    {
+      title: 'RECAP NBL1 WEST | MEN\'S GRAND FINAL',
+      date: 'Mon - Aug 26 - 2024',
+      author: 'Shiburu',
+      imageUrl: News2,
+      authorUrl: News2,
+    },
+    {
+      title: 'PLAYERS REWARDED WITH CHAMPIONSHIP',
+      date: 'Fri - Aug 23 - 2024',
+      author: 'Chris Pike',
+      imageUrl: News3,
+      authorUrl: News3,
+    },
+    {
+      title: 'PROMISE TO BRING CHAMPIONSHIP',
+      date: 'Wed - Aug 20 - 2024',
+      author: 'Cherry',
+      imageUrl: News4,
+      authorUrl: News4,
+    },
+    {
+      title: 'PROMISE TO BRING CHAMPIONSHIP',
+      date: 'Wed - Aug 20 - 2024',
+      author: 'Cherry',
+      imageUrl: News5,
+      authorUrl: News5,
+    },
+    {
+      title: 'PROMISE TO BRING CHAMPIONSHIP',
+      date: 'Wed - Aug 20 - 2024',
+      author: 'Cherry',
+      imageUrl: News6,
+      authorUrl: News6,
+    },
+    {
+      title: 'PROMISE TO BRING CHAMPIONSHIP',
+      date: 'Wed - Aug 20 - 2024',
+      author: 'Cherry',
+      imageUrl: News7,
+      authorUrl: News7,
+    },
+    {
+      title: 'PROMISE TO BRING CHAMPIONSHIP',
+      date: 'Wed - Aug 20 - 2024',
+      author: 'Cherry',
+      imageUrl: News8,
+      authorUrl: News8,
+    },
+    {
+      title: 'PROMISE TO BRING CHAMPIONSHIP',
+      date: 'Wed - Aug 20 - 2024',
+      author: 'Cherry',
+      imageUrl: News9,
+      authorUrl: News9,
+    },
+    {
+      title: 'PROMISE TO BRING CHAMPIONSHIP',
+      date: 'Wed - Aug 20 - 2024',
+      author: 'Cherry',
+      imageUrl: News9,
+      authorUrl: News9,
+    },
+  ];
+
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleLeftClick = () => {
+    setActiveButton('left');
+    
+    if (prevArrowClickHandler) {
+      prevArrowClickHandler();
+    }
+  };
+
+  const handleRightClick = () => {
+    setActiveButton('right');
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
+
+  return (
+    <>
+        <Row className="news-rect" justify="space-between">
+            <Col>
             <BottomDescription
-                title1="OUR DYNAMIC"
-                title2="BRANCHES"
-                content="Explore our all of Branches"
+                title1="LATEST"
+                title2="NEWS"
+                content="Read our latest news"
             />
-            <Slider {...settings} style={{ margin: 0, padding: 0 }}>
-                {newsItems.map((item, index) => (
-                    <div key={index} className="slide-card" style={{ margin: 0, padding: 0 }}>
-                        <Card
-                            hoverable
-                            style={{ height: '400px', margin: 0, padding: 0 }}
-                        >
-                            <div style={{ position: 'relative', height: '100%' }}>
-                                <img
-                                    alt={item.title}
-                                    src={item.imageUrl}
-                                    style={{ width: '100%', height: '400px', objectFit: 'cover' }}
-                                />
-                                <div className="hover-overlay"></div>
-                                <div
-                                style={{
-                                    padding: '0 20px',
-                                    position: 'absolute',
-                                    bottom: 0,
-                                    left: 0,
-                                    right: 0,
-                                    height: '50%',
-                                    background: 'linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0))',
-                                    display: 'flex',
-                                    flexDirection: 'column',
-                                    justifyContent: 'center',
-                                    alignItems: 'center',
-                                    color: '#fff',
-                                }}
-                                >
-                                    <p className="w-full">{item.date}</p>
-                                    <h3 className="font-24 bold white mt-10">{item.title}</h3>
+            </Col>
+            <Col>
+            <Button
+                className="btn-slide btn-prev"
+                onClick={handleLeftClick}
+                style={{
+                backgroundColor: activeButton === 'right' ? 'white' : '',
+                }}
+            >
+                &lt;-
+            </Button>
 
-                                    <Row gutter={[16, 16]} justify="left" className="w-full">
-                                        <Col>
-                                            <img
-                                            alt='Author name'
-                                            src={item.authorUrl}
-                                            style={{ 
-                                                width: '40px', 
-                                                height: '40px', 
-                                                objectFit: 'cover',
-                                                borderRadius: '50%' 
-                                            }}
-                                            />
-                                        </Col>
-                                        <Col>
-                                            <p className="text-left">{item.author}</p>
-                                            <p className="text-left">AUTHOR</p>
-                                        </Col>
-                                    </Row>
-                                </div>
-                            </div>
-                    </Card>
+            {/* Right Button */}
+            <Button
+                className="btn-slide btn-next"
+                onClick={handleRightClick}
+                style={{
+                backgroundColor: activeButton === 'left' ? 'white' : '',
+                }}
+            >
+                -&gt;
+            </Button>
+            </Col>
+        </Row>
+        <Slider {...settings} className="news-sliders-content mt-40" ref={sliderRef}>
+            {newsItems.map((item, index) => (
+            <div key={index} className="slide-card">
+                <Card
+                hoverable
+                style={{ height: '400px', margin: 0, padding: 0 }}
+                >
+                <div style={{ position: 'relative', height: '100%' }}>
+                    <img
+                    alt={item.title}
+                    src={item.imageUrl}
+                    style={{ width: '100%', height: '400px', objectFit: 'cover' }}
+                    />
+                    <div className="hover-overlay"></div>
+                    <div className="carousel-news-content">
+                    <p className="w-full">{item.date}</p>
+                    <h3 className="font-24 bold white mt-10">{item.title}</h3>
+                    <Row gutter={[16, 16]} justify="left" className="w-full">
+                        <Col>
+                        <img
+                            alt="Author name"
+                            src={item.authorUrl}
+                            style={{
+                            width: '40px',
+                            height: '40px',
+                            objectFit: 'cover',
+                            borderRadius: '50%',
+                            }}
+                        />
+                        </Col>
+                        <Col>
+                        <p className="text-left">{item.author}</p>
+                        <p className="text-left">AUTHOR</p>
+                        </Col>
+                    </Row>
+                    </div>
                 </div>
+                </Card>
+            </div>
+            ))}
+        </Slider>
+        <div className="news-blog-rect">
+            <Row justify="space-between" gutter={[16, 16]} className="mt-10">
+                {newsItems.slice(0, 6).map((item, index) => (
+                <Col className="new-item" key={index}>
+                    <div className="d-flex">
+                    <div style={{ padding: '5px', border: '1px solid pink' }}>
+                        <img alt={item.title} src={item.imageUrl} width="90" height="110" />
+                    </div>
+                    <div className="news-right-item" style={{ padding: '10px 20px' }}>
+                        <p>
+                        <span className="red-dot"></span>
+                        {item.date}
+                        </p>
+                        <p
+                        className="font-18 bold mt-10"
+                        style={{ lineHeight: '1.3' }}
+                        >
+                        {item.title}
+                        </p>
+                    </div>
+                    </div>
+                </Col>
                 ))}
-            </Slider>
+            </Row>
         </div>
-    );
+    </>
+  );
 };
 
 export default HomeNews;

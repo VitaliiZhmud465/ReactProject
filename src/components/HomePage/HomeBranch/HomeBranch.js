@@ -50,7 +50,7 @@ const HomeBranch = (props) => {
         content="Explore our all of Branches"
       />
       <div className="customer-main">
-        <Row justify="space-between" className="mt-40">
+        <Row justify="space-between" className="responsive-row mt-40">
           {items.map((x, index) => {
             return (
               <Col key={index}>
@@ -58,8 +58,8 @@ const HomeBranch = (props) => {
                   <div className="image-wrapper">
                     <img src={x.icon} className="branch-img" alt="Branch Icon" />
                   </div>
-                  <p className="font-14 bold mt-5 text-center">
-                    {x.contnt} <span style={{ color: 'var(--redColor)' }}>{x.name}</span>
+                  <p className="font-13 bold mt-5 text-center">
+                    {x.contnt} <span className="bold" style={{ color: 'var(--redColor)' }}>{x.name}</span>
                   </p>
                 </div>
 

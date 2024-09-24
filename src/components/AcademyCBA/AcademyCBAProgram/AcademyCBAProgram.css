@@ -1,0 +1,11 @@
+.programs-section {
+    padding: 80px 50px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+@media screen and (max-width: 768px) {
+    .programs-section {
+        padding: 50px 20px;
+    }
+}

@@ -1,4 +1,4 @@
-import { Slider, Col, Row } from 'antd';
+import { Progress, Col, Row } from 'antd';
 import React from 'react';
 import "./HomeSlide.css"
 
@@ -9,12 +9,12 @@ import BlogHero2 from '../../../assets/png/Hero2.jpg';
 const HomeSlide = (props) => {
     return (
         <div className='home-slide'>
-            <Row justify='space-between' className='main-rect'>
-                <Col xs={24} sm={24} md={10} xl={10} xxl={10}>
+            <Row justify='space-between' className='bg-slide pb-10'>
+                <Col className="bg-left-slide" xs={24} sm={24} md={10} xl={10} xxl={10}>
                     <div className='landing-text-rect'>
-                        <p className='font-76 bold white mt-20 mb-0'>WELCOME TO</p>
-                        <p className='font-76 bold white'>COASTAL</p>
-                        <p className='font-76 bold white'>BASKETBALL</p>
+                        <h1 className='font-56 bold white mt-20 mb-0'>WELCOME TO<br />
+                        COASTAL<br />
+                        BASKETBALL</h1>
                         <p className='font-18 bold white'>
                             Welcome to Coastal Basketball, your premier destination
                             for basketball development and competition in the South
@@ -27,20 +27,21 @@ const HomeSlide = (props) => {
                     </div>
 
                 </Col>
-                <Col xs={24} sm={24} md={14} xl={14} xxl={14} className='landing-img-rect'>
-                    <Row justify='space-between' className='main-rect'>
-                        <Col span={14}>
-                            <Slider 
-                                value={100} 
-                                min={0} 
-                                max={100} 
-                                step={1} 
-                            />
+                <Col xs={24} sm={24} md={14} xl={14} xxl={11} className='landing-img-rect'>
+                    <Row gutter={[20, 20]} className="landing-text-rect" style={{  }}>
+                        <Col className="slider" style={{}}>
+                            <div style={{position:'absolute', bottom:'0', width:'calc(100% - 20px)'}}>
+                            <Row justify="space-between" >
+                                <Col className="font-12 bold grey">DECEMBER MATCH</Col>
+                                <Col className="font-12 bold white">3.5$</Col>
+                            </Row>
+                            <Progress percent={70} showInfo={false} />
+                            </div>
                         </Col>
-                        <Col span={5} className='blog-img-rect'>
+                        <Col className='blog-img-rect'>
                             <img src={BlogHero1} />
                         </Col>
-                        <Col span={5} className='blog-img-rect'>
+                        <Col className='blog-img-rect'>
                             <img src={BlogHero2}  />
                         </Col>
                     </Row>

@@ -72,18 +72,10 @@ const AuthNav = () => {
               <RoundButton
                 className="blue-border"
                 onClick={() => {
-                  history.push(ROUTE_LOGIN);
-                }}
-              >
-                Login
-              </RoundButton>
-              <RoundButton
-                className="blue-border"
-                onClick={() => {
                   history.push(ROUTE_SIGNUP);
                 }}
               >
-                Sign Up
+                REGISTER
               </RoundButton>
             </div>
           </Col>

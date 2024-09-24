@@ -1,0 +1,49 @@
+.about-content {
+    padding: 30px 50px;
+    margin: auto;
+    max-width: 1600px;
+}
+
+.logo-card {
+    padding: 20px 55px;
+}
+
+.logo-card div {
+    background-color: #E6EBF1;
+    display: flex;
+    justify-content: center;
+}
+
+.btn-about-more {
+    padding: 8px 70px;
+    height: 42px;
+    background-color: var(--redColor);
+    color: white;
+    font-weight: bold;
+    margin-top: 70px;
+}
+
+.align-center {
+    align-items: center;
+}
+
+/* .responsive-branch {
+    text-align: center;
+} */
+
+@media screen and (max-width: 768px) {
+    .about-left-content {
+        justify-content: center;
+    }
+
+    .btn-responsive-more {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+    }
+
+    .btn-about-more {
+        margin-top: 30px;
+    }
+}

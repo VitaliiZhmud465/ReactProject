@@ -60,7 +60,7 @@ const HomeNav = () => {
 
   if (screenWidthSize > 760) {
     return (
-      <nav className={`nav ${activeClass}`}>
+      <nav className='nav nav-active'>
         <Row
           justify="space-between"
           align="middle"
@@ -82,7 +82,7 @@ const HomeNav = () => {
     );
   } else {
     return (
-      <nav className={`nav ${activeClass}`}>
+      <nav className={`nav nav-active ${activeClass}`}>
         <Row justify="space-between" align="middle">
           <Col>
             <IconWidget src={Logo} className="nav-logo" />

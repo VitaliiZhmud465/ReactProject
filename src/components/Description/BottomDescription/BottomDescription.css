@@ -10,3 +10,13 @@
     margin: auto;
     margin-top: 25px;
 }
+
+@media screen and (max-width: 768px) {
+    .responsive-branch {
+        text-align: center;
+    }
+
+    .bottom-title {
+        justify-content: center;
+    }
+}

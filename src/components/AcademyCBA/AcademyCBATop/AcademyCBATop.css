@@ -1,0 +1,82 @@
+.image-container {
+    position: relative;
+    overflow: hidden;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+}
+
+.image-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(109, 178, 235, 0.2), rgba(109, 178, 235, 0.1),
+            rgba(109, 178, 235, 0.1),
+            rgba(109, 178, 235, 0.1), rgba(255, 255, 255, 1));
+    pointer-events: none;
+}
+
+.letter-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.letter-content h1 {
+    font-size: 58px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.letter-content h1 span {
+    color: var(--redColor);
+}
+
+.btn-academy-basketball {
+    background-color: #BA6D7F;
+    border: none;
+    color: white;
+    padding: 10px 30px;
+    height: 60px;
+    font-size: 28px;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.academy-basketball-content {
+    max-width: 680px;
+    border: 2px solid var(--redColor);
+    padding: 5px;
+}
+
+.hero-content {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    color: #fff;
+    text-align: center;
+}
+
+
+.program-title {
+    color: #1a2e5a;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.program-description {
+    color: #777;
+    margin-bottom: 30px;
+}
+
+.enrollment-section {
+    padding: 50px 20px;
+    background: #fff;
+    text-align: center;
+}
