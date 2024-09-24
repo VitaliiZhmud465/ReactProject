@@ -14,8 +14,8 @@ export const ROUTE_COMPETITIONS = "/advertise";
 export const ROUTE_FACILITIES = "/advertise-cpc";
 export const ROUTE_REPRESENTATIVE = "/advertise-cpi";
 export const ROUTE_ACADEMY = "/advertise-cpl";
-
-
+export const TEMPLATE_ROUTE_COMPETITION1 = "/competition1";
+export const TEMPLATE_ROUTE_COMPETITION2 = "/competition2";
 export const ROUTE_ADVERTISE = "/advertise";
 export const ROUTE_ADVERTISE_CPC = "/advertise-cpc";
 export const ROUTE_ADVERTISE_CPI = "/advertise-cpi";
