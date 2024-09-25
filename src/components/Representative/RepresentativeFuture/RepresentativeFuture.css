@@ -1,0 +1,71 @@
+.bg-represent-content {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../../assets/png/representative_footer.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.bg-represent-content .text-national {
+
+    color: white !important;
+
+}
+
+.bg-represent-content .national {
+    background-color: #8F1A2A;
+    opacity: 0.9;
+    padding: 37px 60px !important;
+    height: 211px;
+}
+
+.bg-represent-content .international {
+    background-color: #043158;
+    opacity: 0.9;
+    padding: 37px 60px !important;
+    height: 211px;
+}
+
+.text-national h2 {
+    font-size: 36px !important;
+    color: white !important;
+    font-weight: 400 !important;
+    font-family: gameDay-Wide;
+}
+
+.text-national p {
+    font-weight: 100 !important;
+    font-family: ChakraPetch-Regular;
+    font-size: 20px;
+}
+
+.bg-represent-letter {
+    max-width: 1600px;
+    margin-top: auto;
+    padding: 0px 50px;
+}
+
+@media (max-width: 768px) {
+    .bg-represent-content .bg-represent-letter {
+        padding: 0px 20px;
+    }
+
+    .bg-represent-content .national {
+        background-color: #8F1A2A;
+        opacity: 0.9;
+        padding: 20px !important;
+        height: 260px;
+    }
+
+    .bg-represent-content .international {
+        background-color: #043158;
+        opacity: 0.9;
+        padding: 20px !important;
+        height: 260px;
+    }
+}

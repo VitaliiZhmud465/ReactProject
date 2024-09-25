@@ -10,12 +10,15 @@ export const ROOT = "/";
 export const ROUTE_LOGIN = "/login";
 export const ROUTE_SIGNUP = "/signup";
 export const ROUTE_ABOUT_US = "/about-us";
-export const ROUTE_COMPETITIONS = "/advertise";
-export const ROUTE_FACILITIES = "/advertise-cpc";
-export const ROUTE_REPRESENTATIVE = "/advertise-cpi";
-export const ROUTE_ACADEMY = "/advertise-cpl";
+export const ROUTE_COMPETITIONS = "/competitions";
+export const ROUTE_FACILITIES = "/facilities";
+export const ROUTE_REPRESENTATIVE = "/representative";
+export const ROUTE_ACADEMY = "/academy";
+export const ROUTE_PARTICIPATIONS = "/participations";
 
+export const TEMPLATE_ROUTE_COMPETITION1 = "/facilities12";
 
+export const TEMPLATE_ROUTE_COMPETITION2 = "/competition2";
 export const ROUTE_ADVERTISE = "/advertise";
 export const ROUTE_ADVERTISE_CPC = "/advertise-cpc";
 export const ROUTE_ADVERTISE_CPI = "/advertise-cpi";

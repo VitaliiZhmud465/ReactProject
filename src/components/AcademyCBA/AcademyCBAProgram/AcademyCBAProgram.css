@@ -1,11 +1,16 @@
 .programs-section {
-    padding: 80px 50px;
+    padding: 80px 50px !important;
     margin: auto;
     max-width: 1600px;
 }
 
+.academy-program-title {
+    font-family: gameDay-Wide;
+
+}
+
 @media screen and (max-width: 768px) {
     .programs-section {
-        padding: 50px 20px;
+        padding: 50px 20px !important;
     }
 }

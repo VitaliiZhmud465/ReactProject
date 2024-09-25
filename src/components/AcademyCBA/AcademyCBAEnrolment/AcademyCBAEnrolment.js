@@ -9,14 +9,14 @@ const AcademyCBAEnrolment = () => {
   return (
     <div>
         <Row justify="center">
-            <Col className="font-48 bold red">ENROLMENT</Col>
-            <Col className="font-48 bold darkPurple">{'\u00A0'}INFORMATION</Col>
+            <Col className="font-48 typo-red">ENROLMENT</Col>
+            <Col className="font-48 typo-blue">{'\u00A0'}INFORMATION</Col>
         </Row>
         <div className="enrollment-section">
                 <Row className="w-full">
                     <Col xs={24} md={12} className="training-schedule-content">
                         <div className="info-box training-schedule">
-                            <Title className="darkPurple" level={2}>TRAINING SCHEDULE</Title>
+                            <Title className="academy-train-title darkPurple" level={2}>TRAINING SCHEDULE</Title>
                             <Paragraph>
                                 Regular training sessions are held at Coastal Basketball Centre, 
                                 with additional camps and clinics offered during school holidays.

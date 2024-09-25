@@ -11,6 +11,25 @@
     margin-top: 25px;
 }
 
+/* .typo-blue {
+    font-weight: bold;
+    font-family: gameDay-Wide;
+    color: #003866;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.typo-red {
+    font-family: gameDay-Wide;
+    font-weight: bold;
+    font-size: 50px;
+    color: #A7192F;
+}
+
+.typo-general {
+    font-family: ChakraPetch-Regular;
+} */
+
 @media screen and (max-width: 768px) {
     .responsive-branch {
         text-align: center;

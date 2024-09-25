@@ -1,0 +1,9 @@
+.competition-cvontent h2 {
+    font-size: 28px;
+}
+
+@media screen and (max-width: 768px) {
+    .competition-cvontent h2 {
+        font-size: 20px;
+    }
+}

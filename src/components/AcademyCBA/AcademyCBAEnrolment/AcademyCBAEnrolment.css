@@ -55,10 +55,29 @@
 }
 
 .training-schedule {
-    max-width: 600px;
+    max-width: 80%;
     background-color: rgba(255, 255, 255, 0.9);
     margin: auto;
     padding: 50px 0;
+    padding: 0 10px;
+}
+
+.enrollment-section .academy-train-title {
+    font-size: 35px !important;
+    margin-bottom: 0;
+}
+
+.enrollment-section .ant-typography {
+    font-size: 28px;
+    margin-bottom: 0;
+    margin-top: 15px;
+}
+
+.enrollment-section .training-schedule {
+    max-width: 80%;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: auto;
+    padding: 65px 20px;
 }
 
 .training-schedule-content {
@@ -68,7 +87,7 @@
 .how-to-join {
     background: none !important;
     padding: 50px 0;
-    max-width: 600px;
+    max-width: 80%;
     margin: auto;
 }
 
@@ -81,6 +100,11 @@
     color: white !important;
 }
 
+.academy-train-title {
+    font-family: gameDay-Wide;
+    font-weight: 400 !important;
+}
+
 @media (max-width: 768px) {
     .content {
         flex-direction: column;
@@ -90,5 +114,9 @@
 
     .enrollment-section::before {
         left: 0;
+    }
+
+    .training-schedule {
+        padding: 25px 15px;
     }
 }

@@ -10,9 +10,16 @@ const HomeFeature = (props) => {
               <p className="font-24 bold white text-center">{content}</p>
             </Col>
             <Col>
-              <Button style={{ backgroundColor: bgBtn }} className="btn-feature">
-                {btnTitle}
-              </Button>
+              <div
+                style={{
+                  padding:'9px !important',
+                  border:'1px solid white'
+                }}
+              >
+                <Button style={{ backgroundColor: bgBtn }} className="btn-feature">
+                  {btnTitle}
+                </Button>
+              </div>
             </Col>
           </Row>
         </div>

@@ -1,0 +1,99 @@
+.partici-sliders-content {
+    max-width: 1600px;
+    padding: 0px 40px;
+    margin: auto;
+}
+
+.partici-sliders-content .ant-card-body {
+    height: 100%;
+    padding: 0;
+}
+
+.partici-sliders-content h2 {
+    font-size: 33px;
+    font-family: ChakraPetch-Regular;
+    color: white;
+    font-weight: 600;
+    margin-top: 5px;
+    margin-bottom: 40px;
+}
+
+.partici-sliders-content p {
+    font-family: ChakraPetch-Regular;
+    color: white;
+    font-size: 25px;
+    font-weight: 500;
+    opacity: 0.8;
+}
+
+
+.partici-sliders-content .btn-next:focus {
+    background-color: var(--darkPurple) !important;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 12px solid #97AFC1;
+    transform: rotate(180deg);
+    margin-right: 10px;
+}
+
+.left-arrow {
+    margin-right: 0px !important;
+}
+
+.btn-carousel-direction {
+    display: flex;
+    align-items: flex-start;
+}
+
+.line {
+    width: 15px;
+    height: 1px;
+    border: 1px solid #97AFC1;
+
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    border: 2px solid #97AFC1;
+    border-radius: 50%;
+}
+
+.button-wrapper {
+    position: relative;
+}
+
+.button-wrapper.active::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -1px;
+    /* Adjust position to your liking */
+    right: -1px;
+    /* Adjust position to your liking */
+    bottom: 0;
+    border: 1px solid #fff;
+    /* Color of the border */
+    pointer-events: none;
+    /* Make sure it doesn't interfere with button clicks */
+    z-index: -1;
+    /* Place it behind the button */
+}
+
+@media screen and (max-width: 768px) {
+    .partici-sliders-content .ant-card-cover img {
+        width: 75%;
+        margin: auto;
+    }
+}

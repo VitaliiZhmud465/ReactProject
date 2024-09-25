@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect , useState, useRef } from 'react';
 import { Button, Card, Row, Col } from 'antd';
 import 'antd/dist/antd.css';
 import './HomeNews.css';
@@ -156,6 +156,11 @@ const HomeNews = () => {
     }
   };
 
+  useEffect(() => {
+    setActiveButton('right');
+    handleRightClick();
+  }, []);
+
   return (
     <>
         <Row className="news-rect" justify="space-between">
@@ -166,27 +171,49 @@ const HomeNews = () => {
                 content="Read our latest news"
             />
             </Col>
-            <Col>
-            <Button
+            <Col className="btn-carousel-direction">
+              <Button
                 className="btn-slide btn-prev"
                 onClick={handleLeftClick}
                 style={{
-                backgroundColor: activeButton === 'right' ? 'white' : '',
+                  backgroundColor: activeButton === 'right' ? 'white' : '',
+                  padding: '0px 3px 0px 3px',
+                  height: '50px',
+                  width: '80px',
                 }}
-            >
-                &lt;-
-            </Button>
+              >
+                <div className="icon-container">
+                  <div className="left-arrow arrow"
+                    style={{
+                      borderRight: activeButton === 'left' ? '12px solid #fff' : '12px solid #97AFC1',
+                      transform: 'rotate(360deg)',
+                    }}></div>
+                  <div className="line"
+                    style={{ border: activeButton === 'left' ? '1px solid #fff' : '1px solid #97AFC1' }}></div>
+                  <div className="circle"
+                    style={{ border: activeButton === 'left' ? '2px solid #fff' : '2px solid #97AFC1' }}></div>
+                </div>
+              </Button>
 
-            {/* Right Button */}
-            <Button
+              <Button
                 className="btn-slide btn-next"
                 onClick={handleRightClick}
                 style={{
-                backgroundColor: activeButton === 'left' ? 'white' : '',
+                  backgroundColor: activeButton === 'right' ? 'var(--darkPurple)' : '',
+                  padding: '0px 1px 0px 15px',
+                  height: '50px',
+                  width: '80px',
                 }}
-            >
-                -&gt;
-            </Button>
+              >
+                <div className="icon-container">
+                  <div className="circle"
+                    style={{ border: activeButton === 'right' ? '2px solid #fff' : '2px solid #97AFC1' }}></div>
+                  <div className="line"
+                    style={{ border: activeButton === 'right' ? '1px solid #fff' : '1px solid #97AFC1' }}></div>
+                  <div className="arrow"
+                    style={{ borderRight: activeButton === 'right' ? '12px solid #fff' : '12px solid #97AFC1' }}></div>
+                </div>
+              </Button>
             </Col>
         </Row>
         <Slider {...settings} className="news-sliders-content mt-40" ref={sliderRef}>

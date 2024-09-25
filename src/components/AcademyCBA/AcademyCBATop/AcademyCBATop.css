@@ -1,82 +1,70 @@
-.image-container {
-    position: relative;
-    overflow: hidden;
-}
-
-.image-container img {
-    width: 100%;
+.academy-slide {
+    padding-top: 600px;
     height: auto;
-}
-
-.image-mask {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(to bottom, rgba(109, 178, 235, 0.2), rgba(109, 178, 235, 0.1),
-            rgba(109, 178, 235, 0.1),
-            rgba(109, 178, 235, 0.1), rgba(255, 255, 255, 1));
-    pointer-events: none;
-}
-
-.letter-content {
-    max-width: 1000px;
-    margin: auto;
-}
-
-.letter-content h1 {
-    font-size: 58px;
-    font-weight: bold;
-    line-height: 1.2;
-}
-
-.letter-content h1 span {
-    color: var(--redColor);
-}
-
-.btn-academy-basketball {
-    background-color: #BA6D7F;
-    border: none;
-    color: white;
-    padding: 10px 30px;
-    height: 60px;
-    font-size: 28px;
-}
-
-.justify-center {
+    background-image:
+        linear-gradient(to bottom, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 1) 100%),
+        url('../../../assets/png/Hero.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
     justify-content: center;
-}
-
-.academy-basketball-content {
-    max-width: 680px;
-    border: 2px solid var(--redColor);
-    padding: 5px;
-}
-
-.hero-content {
-    position: absolute;
-    bottom: 5px;
-    left: 50%;
-    transform: translate(-50%, -20%);
-    color: #fff;
+    align-items: center;
     text-align: center;
+    padding-bottom: 20px;
 }
 
+.academy-slide-content {}
 
-.program-title {
-    color: #1a2e5a;
+.academy-slide .slide-subtitle {
+    font-size: 30px;
+    color: white;
+    background-color: #B0687E;
+    padding: 10px 20px;
+    display: inline-block;
+    text-align: center;
+    text-transform: uppercase;
     font-weight: bold;
-    margin-bottom: 10px;
+    outline: 3px solid #B0687E;
+    outline-offset: 5px;
 }
 
-.program-description {
-    color: #777;
-    margin-bottom: 30px;
+.academy-slide .slide-title {
+    line-height: 1.5;
+    font-size: 56px;
+    font-weight: 400 !important;
+    color: black;
+    font-family: gameDay-Wide;
 }
 
-.enrollment-section {
-    padding: 50px 20px;
-    background: #fff;
+.slide-title span {
+    color: #A5192E;
+}
+
+.academy-slide .slide-description {
+    font-size: 18px;
+    font-family: ChakraPetch-Regular;
+    margin-top: 30px;
+    color: #4D4D4D;
+    max-width: 850px;
+    line-height: 1.6;
     text-align: center;
+    margin: 30px auto;
+    font-weight: 600 !important;
+}
+
+@media screen and (max-width: 768px) {
+    .academy-slide .slide-title {
+        font-size: 38px;
+        line-height: 1.9;
+    }
+
+    .academy-slide .slide-subtitle {
+        font-size: 20px;
+    }
+
+    .academy-slide .slide-description {
+        text-align: center;
+        width: 90%;
+    }
 }

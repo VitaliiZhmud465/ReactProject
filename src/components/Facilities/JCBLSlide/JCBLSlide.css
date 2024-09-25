@@ -1,0 +1,59 @@
+.JCBL-slide {
+    padding-top: 800px;
+    height: auto; /* Set a height based on the image size */
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 0.0), rgba(255, 255, 255, 1)), url('../../../assets/png/JCBLflag.jpg'); /* Replace this with the correct path */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  
+  /* Content wrapper to center the text */
+  .CBC-slide-content {
+
+  }
+  
+  /* Subtitle styling */
+  .slide-subtitle {
+    font-size: 30px;
+    color: white;
+    background-color: #B0687E; /* Background color similar to the one in the image */
+    padding: 10px 20px;
+
+    display: inline-block; /* Inline-block to fit content */
+    text-align: center; /* Center the text */
+    text-transform: uppercase; /* Capitalize text */
+    font-weight: bold;
+    
+    /* Add an outline to match the image */
+    outline: 3px solid #B0687E; /* Outline color with some transparency */
+    outline-offset: 5px; /* Creates space between the border and the outline */
+  }
+  
+  /* Main title styling */
+  .slide-title {
+    font-size: 72px;
+    font-weight: bold;
+    color: black;
+    margin-bottom: -30px;
+    font-family: gameDay-Wide;
+  }
+  
+  .slide-title span {
+    color: #A5192E; /* Red color for the CBC abbreviation */
+  }
+  
+  /* Description styling */
+  .slide-description {
+    font-size: 16px;
+    /* font-weight: bold; */
+    margin-top: 30px;
+    color: #4D4D4D;
+    max-width: 850px;
+    line-height: 1.6;
+    font-family: ChakraPetch-Regular;
+  }

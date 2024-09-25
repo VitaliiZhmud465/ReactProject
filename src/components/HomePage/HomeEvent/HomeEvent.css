@@ -29,7 +29,10 @@
 }
 
 .event-slides-content {
-    padding: 0px 160px 0px 0px;
+    /* padding: 0px 160px 0px 0px; */
+    padding: 0 35px;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .event-title {
@@ -62,4 +65,10 @@
     color: white;
     background-color: #003865;
     border: 1px solid white;
+}
+
+@media screen and (max-width: 914px) {
+    .event-slides-content {
+        padding: 0 20px;
+    }
 }

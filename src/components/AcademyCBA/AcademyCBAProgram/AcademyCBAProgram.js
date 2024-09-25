@@ -50,8 +50,8 @@ const AcademyCBAProgram = () => {
                             </div>
                         }
                     >
-                        <h5 className="red bold mt--15">{item.date}</h5>
-                        <h2 className="bold">{item.title}</h2>
+                        <h5 className="font-16 red bold mt--15">{item.date}</h5>
+                        <h2 className="bold academy-program-title">{item.title}</h2>
                         <p>{item.content}</p>
                     </Card>
                 </Col>

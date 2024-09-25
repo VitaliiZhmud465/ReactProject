@@ -70,6 +70,11 @@
 
 .landing-text-rect h1 {
     line-height: 1.05;
+    font-family: gameDay-Wide;
+}
+
+.landing-text-rect p {
+    font-family: ChakraPetch-Regular;
 }
 
 .ant-progress-success-bg,

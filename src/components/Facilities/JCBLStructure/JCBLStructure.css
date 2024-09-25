@@ -1,0 +1,38 @@
+.league-structure-section {
+    background-color: #003366; /* Navy blue background */
+    padding: 50px 0;
+    text-align: center;
+  }
+  
+  .highlight {
+    color: #A7192F; /* Red color for highlight */
+  }
+  
+  .info-card {
+    background-color: #003366;
+    color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .info-icon {
+    font-size: 40px;
+    margin-bottom: 20px;
+    color: #A7192F;
+  }
+  
+  .pathway-line {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .line {
+    width: 100%;
+    height: 3px;
+    background-color: #A7192F;
+    position: relative;
+    top: 50%;
+  }
+  

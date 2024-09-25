@@ -71,7 +71,13 @@ const HomeNav = () => {
           </Col>
           {menuUI}
           <Col>
-            <div>
+            <div 
+              style={{
+              padding:'1px',
+              background:'none',
+              border: '1px solid var(--darkPurple)',
+              }}
+            >
               <RoundButton onClick={()=>{
                 history.push(ROUTE_SIGNUP)
               }}>Register</RoundButton>

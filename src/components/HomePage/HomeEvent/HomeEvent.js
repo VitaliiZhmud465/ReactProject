@@ -1,4 +1,4 @@
-import React, { useState, useRef } from 'react';
+import React, { useEffect, useState, useRef } from 'react';
 import { Button, Row, Col } from 'antd';
 import './HomeEvent.css';
 import Slider from "@ant-design/react-slick";
@@ -42,16 +42,16 @@ const HomeEvent = () => {
         prevArrow: <PrevArrow />,
         responsive: [
         {
-            breakpoint: 1024, // Screen width < 1024px
+            breakpoint: 1024,
             settings: {
-            slidesToShow: 2, // Show 2 slides for screen widths < 1024px
+            slidesToShow: 2,
             slidesToScroll: 1,
             },
         },
         {
-            breakpoint: 768, // Screen width < 768px
+            breakpoint: 768,
             settings: {
-            slidesToShow: 1, // Show 1 slide for screen widths < 768px
+            slidesToShow: 1,
             slidesToScroll: 1,
             },
         },
@@ -98,6 +98,11 @@ const HomeEvent = () => {
         }
     };
     
+    useEffect(() => {
+        setActiveButton('right');
+        handleRightClick();
+    }, []);
+
     return (
         <div className="event-rect">
             <Row justify="space-between" className="title-content">
@@ -108,24 +113,48 @@ const HomeEvent = () => {
                     </h1>
                     <p className="font-18 bold grey">Learn more about our upcoming events</p>
                 </Col>
-                <Col>
+                <Col className="btn-carousel-direction">
                     <Button
                         className="btn-slide btn-prev"
                         onClick={handleLeftClick}
                         style={{
                         backgroundColor: activeButton === 'right' ? 'white' : '',
+                        padding: '0px 3px 0px 3px',
+                        height: '50px',
+                        width: '80px',
                         }}
                     >
-                        &lt;-
+                        <div className="icon-container">
+                        <div className="left-arrow arrow"
+                            style={{
+                            borderRight: activeButton === 'left' ? '12px solid #fff' : '12px solid #97AFC1',
+                            transform: 'rotate(360deg)',
+                            }}></div>
+                        <div className="line"
+                            style={{ border: activeButton === 'left' ? '1px solid #fff' : '1px solid #97AFC1' }}></div>
+                        <div className="circle"
+                            style={{ border: activeButton === 'left' ? '2px solid #fff' : '2px solid #97AFC1' }}></div>
+                        </div>
                     </Button>
+
                     <Button
                         className="btn-slide btn-next"
                         onClick={handleRightClick}
                         style={{
-                        backgroundColor: activeButton === 'left' ? 'white' : '',
+                        backgroundColor: activeButton === 'right' ? 'var(--darkPurple)' : '',
+                        padding: '0px 1px 0px 15px',
+                        height: '50px',
+                        width: '80px',
                         }}
                     >
-                        -&gt;
+                        <div className="icon-container">
+                        <div className="circle"
+                            style={{ border: activeButton === 'right' ? '2px solid #fff' : '2px solid #97AFC1' }}></div>
+                        <div className="line"
+                            style={{ border: activeButton === 'right' ? '1px solid #fff' : '1px solid #97AFC1' }}></div>
+                        <div className="arrow"
+                            style={{ borderRight: activeButton === 'right' ? '12px solid #fff' : '12px solid #97AFC1' }}></div>
+                        </div>
                     </Button>
                 </Col>
             </Row>

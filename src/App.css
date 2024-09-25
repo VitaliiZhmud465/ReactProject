@@ -156,6 +156,10 @@ p {
     margin-top: 40px;
 }
 
+.mb-50 {
+    margin-bottom: 100px;
+}
+
 .mt-60 {
     margin-top: 60px;
 }
@@ -302,6 +306,25 @@ p {
 .phone-input .PhoneInputInput {
     border: none;
     outline: none;
+}
+
+.typo-blue {
+    font-weight: 500;
+    font-family: gameDay-Wide;
+    color: #003866;
+    font-size: 50px;
+    margin-right: 10px;
+}
+
+.typo-red {
+    font-family: gameDay-Wide;
+    font-weight: 500;
+    font-size: 50px;
+    color: #A7192F;
+}
+
+.typo-general {
+    font-family: ChakraPetch-Regular;
 }
 
 .phone-input .PhoneInputInput:focus-visible {

@@ -5,17 +5,17 @@
     justify-content: space-between;
 }
 
-.feature-content div {
+/* .feature-content div {
     padding: 0 !important;
-}
+} */
 
 .btn-feature {
-    border: none;
+    border: none !important;
     height: 35px !important;
     padding: 0px 80px !important;
     font-weight: bold !important;
     color: var(--whiteColor) !important;
-    margin-left: 20px;
+    /* margin-left: 20px; */
 }
 
 .btn-feature:hover {
