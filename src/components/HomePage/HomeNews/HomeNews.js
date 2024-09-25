@@ -17,7 +17,6 @@ import News7 from "../../../assets/png/news7.jpg";
 import News8 from "../../../assets/png/news8.jpg";
 import News9 from "../../../assets/png/news9.jpg";
 
-// Storing reference for prev arrow click handler
 let prevArrowClickHandler = null;
 
 const NextArrow = ({ onClick }) => (
@@ -50,16 +49,16 @@ const HomeNews = () => {
     prevArrow: <PrevArrow />,
     responsive: [
       {
-        breakpoint: 1024, // Screen width < 1024px
+        breakpoint: 1024, 
         settings: {
-          slidesToShow: 2, // Show 2 slides for screen widths < 1024px
+          slidesToShow: 2,
           slidesToScroll: 1,
         },
       },
       {
-        breakpoint: 768, // Screen width < 768px
+        breakpoint: 768,
         settings: {
-          slidesToShow: 1, // Show 1 slide for screen widths < 768px
+          slidesToShow: 1, 
           slidesToScroll: 1,
         },
       },

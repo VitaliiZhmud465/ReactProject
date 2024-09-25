@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Row, Col, Card } from 'antd';
 import './AcademyCBAProgram.css';
 import { BottomDescription } from "components/Description/BottomDescription/BottomDescription";
-// Replace these with your actual image imports
+
 import HeroImage from "../../../assets/png/Hero.jpg";
 import CBPrepImage from "../../../assets/png/Programs.jpg";
 import CBNextGenImage from "../../../assets/png/Programs-1.jpg";

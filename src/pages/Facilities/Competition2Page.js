@@ -3,6 +3,7 @@ import HomeLayout from "layouts/HomeLayout/HomeLayout";
 import JCBLSlide from "components/Competition/JCBLSlide/JCBLSlide";
 import React from "react";
 import JCBLStructure from "components/Competition/JCBLStructure/JCBLStructure";
+import JCBLIntro from "components/Competition/JCBLIntro/JCBLIntro";
 
 
 function Competition2Page(props) {
@@ -10,6 +11,7 @@ function Competition2Page(props) {
     <HomeLayout>
       <JCBLSlide/>
       <JCBLStructure/>
+      <JCBLIntro/>
     </HomeLayout>
   );
 }

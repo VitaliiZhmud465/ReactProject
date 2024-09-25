@@ -16,9 +16,12 @@ export const ROUTE_REPRESENTATIVE = "/representative";
 export const ROUTE_ACADEMY = "/academy";
 export const ROUTE_PARTICIPATIONS = "/participations";
 
-export const TEMPLATE_ROUTE_COMPETITION1 = "/facilities12";
 
-export const TEMPLATE_ROUTE_COMPETITION2 = "/competition2";
+export const TEMPLATE_ROUTE_COMPETITION1 = "/competition1";
+
+export const TEMPLATE_ROUTE_REGISTER1 = "/register1";
+export const TEMPLATE_ROUTE_REGISTER2 = "/register2";
+
 export const ROUTE_ADVERTISE = "/advertise";
 export const ROUTE_ADVERTISE_CPC = "/advertise-cpc";
 export const ROUTE_ADVERTISE_CPI = "/advertise-cpi";
@@ -27,31 +30,15 @@ export const ROUTE_LEGAL = "/legal";
 export const ROUTE_CONTACT_US = "/contact-us";
 export const ROUTE_OTP = "/otp-verify";
 
-export const ROUTE_SHOP = "/shop";
-export const ROUTE_STORE = "/store";
-export const ROUTE_FAVOURITE = "/favourite";
-export const ROUTE_PROFILE = "/profile";
-export const ROUTE_NOTIFICATION = "/notification";
-export const ROUTE_MY_CART = "cart";
-export const ROUTE_ORDER_HISTORY = "order";
-export const ROUTE_MY_WALLET = "wallet";
-export const ROUTE_MY_LOCATION = "location";
-export const ROUTE_SUPPORT = "support";
+
 
 
 export const NAV_MENU_IMTES = [
   { route: ROOT, title: "Home", active: true },
-  { route: ROUTE_ABOUT_US, title: "About Us", active: false },
   { route: ROUTE_COMPETITIONS, title: "COMPETITIONS", active: false },
   { route: ROUTE_FACILITIES, title: "FACILITIES", active: false },
   { route: ROUTE_REPRESENTATIVE, title: "REPRESENTATIVE", active: false },
   { route: ROUTE_ACADEMY, title: "ACADEMY", active: false },
-];
-export const NAV_MAIN_MENU_IMTES = [
-  { route: ROUTE_SHOP, title: "Shop", active: true },
-  { route: ROUTE_STORE, title: "Stores", active: false },
-  { route: ROUTE_FAVOURITE, title: "My Favourites", active: false },
-  { route: ROUTE_PROFILE, title: "My Profile", active: false },
 ];
 export const FOOTER_SITEMAP_IMTES = [
   { route: "", title: "COMPETITIONS", main: true },
@@ -82,31 +69,4 @@ export const FOOTER_ASSOCIATION_IMTES = [
   { route: ROUTE_ABOUT_US, title: "TEAM 2", main: false },
   { route: ROUTE_ABOUT_US, title: "TEAM 3", main: false },
   { route: ROUTE_ABOUT_US, title: "TEAM 4", main: false },
-];
-export const MENU_ITEMS = [
-  {
-    route: ROUTE_ORDER_HISTORY,
-    icon: <img src={OrderIcon} className="menu-item-icon" />,
-    title: "Order History",
-  },
-  {
-    route: ROUTE_MY_WALLET,
-    icon: <img src={WalletIcon} className="menu-item-icon" />,
-    title: "My Wallet",
-  },
-  {
-    route: ROUTE_MY_LOCATION,
-    icon: <img src={LocationIcon} className="menu-item-icon" />,
-    title: "My Location",
-  },
-  {
-    route: ROUTE_CONTACT_US,
-    icon: <img src={ContactIcon} className="menu-item-icon" />,
-    title: "Contact Us",
-  },
-  {
-    route: ROUTE_SUPPORT,
-    icon: <img src={SupportIcon} className="menu-item-icon" />,
-    title: "Support",
-  },
 ];

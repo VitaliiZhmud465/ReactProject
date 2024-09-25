@@ -3,6 +3,8 @@
     padding-left: 50px;
     padding-bottom: 30px;
     padding-right: 50px;
+    max-width: 1600px;
+    margin: auto;
 }
 
 .typo-blue {

@@ -8,7 +8,7 @@ const CBCSlide = () => {
                 <h4 className="slide-subtitle">THE AGE OF MODERN BASKETBALL</h4>
                 <h1 className="slide-title">COASTAL BASKETBALL</h1>
                 <h1 className='slide-title'>CENTRE <span>(CBC)</span></h1>
-                <p className="slide-description">
+                <p className="slide-description mt-20">
                     The Coastal Basketball Centre (CBC) is the heartbeat of our basketball operations,
                     offering state-of-the-art facilities designed to nurture talent and host competitive
                     events. Located in Bunbury, CBC is the first of several planned centres aimed at

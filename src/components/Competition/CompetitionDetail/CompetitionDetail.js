@@ -2,7 +2,7 @@ import React from 'react';
 import { Button, Row, Col, Card } from 'antd';
 import './CompetitionDetail.css';
 import { BottomDescription } from "components/Description/BottomDescription/BottomDescription";
-// Replace these with your actual image imports
+
 import CompDetailsImage from "../../../assets/png/Competition Details.jpg";
 import CompDetailsImage1 from "../../../assets/png/Competition Details-1.jpg";
 import CompDetailsImage2 from "../../../assets/png/Competition Details-2.jpg";

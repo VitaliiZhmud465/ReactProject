@@ -11,7 +11,6 @@ const CBCFacility = () => {
             <h4>Explore our all of cour facilites on CBC</h4>
             
                 <Row className='court-content represent-left-content' gutter={[32, 32]} justify="center" align="middle">
-                    {/* Modern Courts Section */}
                     <Col xs={24} md={12}>
                         <Card
                             bordered={false}
@@ -31,7 +30,6 @@ const CBCFacility = () => {
                 </Row>
 
                 <Row className='court-content represent-left-content' gutter={[32, 32]} justify="center" align="middle">
-                    {/* Shooting Bays Section */}
                     <Col xs={24} md={12} className="order-left">
                         <div className="courts-info">
                             <h2>SHOOTING BAYS</h2>
@@ -48,8 +46,7 @@ const CBCFacility = () => {
                         >
                         </Card>
                     </Col>
-                </Row>
-            
+                </Row>  
         </div>
     )
 }

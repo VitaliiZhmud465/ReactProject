@@ -79,16 +79,11 @@
     position: absolute;
     top: 0;
     left: -1px;
-    /* Adjust position to your liking */
     right: -1px;
-    /* Adjust position to your liking */
     bottom: 0;
     border: 1px solid #fff;
-    /* Color of the border */
     pointer-events: none;
-    /* Make sure it doesn't interfere with button clicks */
     z-index: -1;
-    /* Place it behind the button */
 }
 
 @media screen and (max-width: 768px) {
