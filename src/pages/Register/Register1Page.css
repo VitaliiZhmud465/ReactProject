@@ -1,0 +1,443 @@
+.register-content {
+    padding-top: 200px;
+
+    margin-bottom: 100px;
+}
+
+.register-content .register-adv {
+    text-align: center;
+}
+
+.register-content .register-adv h1 {
+    font-family: gameDay-Wide;
+    font-size: 60px;
+    color: #003865;
+    line-height: 0.7;
+}
+
+.register-content .register-adv h1 span {
+    color: #A6182E;
+}
+
+.register-content .register-adv p {
+    font-family: ChakraPetch-SemiBold;
+    font-size: 16px;
+    color: #4D4D4D;
+    margin: 0 auto;
+    max-width: 1000px;
+    margin-bottom: 30px;
+}
+
+.btn-register {
+    background-color: #AE2D41;
+    color: white;
+    outline: 1px solid #396587;
+    outline-offset: 3px;
+    border-radius: 0;
+    border: none;
+    padding: 5px 10px;
+}
+
+.btn-register:hover {
+    background-color: #7e343f;
+}
+
+.register-logo {
+    margin-top: 50px;
+    width: 100%;
+    /* height: 100vh; Set the desired height of the image area */
+    overflow: hidden;
+    position: relative;
+}
+
+.register-logo img {
+    width: 100%;
+    height: auto;
+    /* filter: blur(6px); Apply blur effect */
+    transform: scale(1.1); /* Slight zoom for aesthetic effect */
+    /* filter: blur(5px) brightness(0.7); */
+    z-index: 0;
+}
+
+.register2-logo {
+    margin-top: 50px;
+    width: 100%;
+    /* height: 100vh; Set the desired height of the image area */
+    overflow: hidden;
+    position: relative;
+}
+
+.register2-logo img {
+    width: 100%;
+    height: auto;
+    /* filter: blur(6px); Apply blur effect */
+    transform: scale(1.1); /* Slight zoom for aesthetic effect */
+    /* filter: blur(5px) brightness(0.7); */
+    z-index: 0;
+}
+
+.logo-overlay {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the logo */
+    text-align: center;
+    z-index: 2;
+}
+
+.logo-overlay .center-logo {
+    width: 50%; /* Adjust the size of the logo */
+    height: auto;
+    z-index: 3;
+}
+
+.register-logo::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(4, 47, 83, 0.6); /* Dark blue overlay with 50% opacity */
+    z-index: 1; /* Ensure this is above the image but below the logo */
+}
+
+.register-form {
+    position: relative;
+    top: -80px;
+    width: 70%;
+    margin: 0 auto;
+    z-index: 5;
+    background-color: white;
+}
+
+.register-form-title {
+    background-color: #A6182E;
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    border: none;
+}
+
+.register-form-title h1 {
+    font-family: ChakraPetch-Regular;
+    font-size: 20px;
+    color: white;
+}
+
+.register-form-row {
+    margin: 0!important;
+    padding: 30px 30px;
+    border: 1px solid #C4C4C4;
+    border-top: none;
+}
+
+.register-form-row h2 {
+    color: #194C75;
+    font-family: ChakraPetch-SemiBold;
+}
+
+
+.upload-title {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #003865;
+    text-align: left;
+}
+
+.ant-upload.ant-upload-drag {
+    border: 1px dashed #003865;
+    background-color: #f5f7fa;
+    padding: 30px;
+}
+
+.ant-upload-drag-icon {
+    color: #003865;
+    font-size: 24px;
+}
+
+.upload-instructions {
+    margin-top: 10px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #4D4D4D;
+}
+
+.upload-instructions-title {
+    color: #A6182E;
+}
+
+.consent-title {
+    color: #003865; /* Navy blue color for title */
+    font-family: 'gameDay-Wide', sans-serif;
+}
+
+.consent-subtitle {
+    color: #003865; /* Navy blue color for subtitle */
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    margin-bottom: 10px;
+}
+
+.form-fields {
+    margin-top: 20px;
+}
+
+.form-input {
+    width: 100%;
+    margin-bottom: 10px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+}
+
+.signature-section {
+    display: flex;
+    margin-top: 20px;
+}
+
+.signature-upload {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.ant-upload.ant-upload-drag {
+    border: 1px dashed #003865;
+    background-color: #f5f7fa;
+    padding: 20px;
+}
+
+.ant-upload-drag-icon {
+    color: #003865;
+    font-size: 24px;
+}
+
+.ant-upload-text {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #003865;
+}
+
+.date-picker-section {
+    display: flex;
+    flex-direction: column;
+}
+
+.date-picker {
+    /* width: 200px; */
+    margin-top: 8px;
+    display: block;
+}
+
+.register-form-row h3 {
+    color: #194C75;
+    font-family: ChakraPetch-SemiBold;
+    font-size: 16px;
+}
+
+.register-form-row p {
+    font-family: ChakraPetch-Regular;
+    color: #8D8D8D;
+}
+
+.payment-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.fee-title {
+    color: #003865; /* Navy blue color */
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    margin-bottom: 8px;
+}
+
+.fee-description {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #4D4D4D;
+    margin-bottom: 20px;
+}
+
+.payment-select {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.payment-button {
+    width: 100%;
+    background-color: #003865;
+    color: white;
+    border: none;
+    border-radius: 0;
+    height: 45px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+}
+
+.payment-button:hover {
+    background-color: #002C52; /* Darker shade of navy blue */
+}
+
+.payment-security-note {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    color: #A6192E; /* Red color */
+    margin-top: 10px;
+    text-align: center;
+}
+
+.submit-button {
+    width: 100%;
+    background-color: #A6192E; /* Red background */
+    color: white;
+    border: 1px solid #003865; /* Navy blue border */
+    border-radius: 0;
+    height: 60px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+}
+
+.submit-button:hover {
+    background-color: #7E343F; /* Darker shade of red */
+    border: 1px solid #003865; /* Retain navy blue border on hover */
+}
+
+.custom-radio-group .ant-radio-button-wrapper {
+  font-family: 'ChakraPetch-SemiBold', sans-serif;
+  border-radius: 0;
+  width: 100%;
+  /* height: 45px; */
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: relative;
+  padding-left: 40px;
+  border: 1px solid #E0E0E0;
+  color: #D8D8D8;
+  font-size: 14px;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.custom-radio-group .ant-radio-button-wrapper::before {
+  content: '';
+  position: absolute;
+  right: 15px;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  border: 2px solid #AE2D41;
+  background-color: transparent;
+  transition: all 0.3s ease;
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked::before {
+  content: '✔'; /* Checkmark icon */
+  font-size: 12px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #AE2D41;
+  border: none; 
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked {
+  background-color: #FFFFFF;
+  color: #AE2D41;
+  border-color: #AE2D41;
+}
+
+.custom-radio-group .ant-radio-button-wrapper:not(.ant-radio-button-wrapper-checked):hover {
+  border-color: #AE2D41;
+  color: #AE2D41;
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+  background-color: #7e343f;
+}
+
+.custom-radio-group .ant-radio-button-wrapper-checked::before {
+  background-color: #AE2D41;
+}
+
+.custom-radio-group .ant-radio-button-wrapper:hover::before {
+  border-color: #AE2D41;
+}
+
+.custom-radio-group .ant-radio-button-wrapper:hover::before {
+    border-color: #AE2D41; /* Change the border color of the circle when hovered */
+    background-color: #AE2D41; /* Optionally change the background color on hover */
+  }
+  
+  .custom-radio-group .ant-radio-button-wrapper-checked::before {
+    background-color: #AE2D41; /* Ensure the circle stays filled when checked */
+    border-color: #AE2D41;
+  }
+
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):hover {
+    color:white;
+    
+  }
+  .ant-radio-button-wrapper-checked:not(.ant-radio-button-wrapper-disabled):first-child{
+    border-color: #AE2D41;
+  }
+
+  .ant-radio-button-wrapper-checked:not([class*=' ant-radio-button-wrapper-disabled']).ant-radio-button-wrapper:first-child  {
+    border-right-color: #AE2D41;
+  }
+
+  .row-padding-top {
+    padding: 30px 0px;
+  }
+
+.ant-select-selector {
+    height: 44px!important;
+}
+
+.ant-input {
+    height: 44px!important;
+}
+
+.ant-picker-input {
+    height: 36px!important;
+}
+
+.ant-select-selection-placeholder {
+    padding: 5px!important;
+}
+
+.input-condition, .input-medication {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #E0E0E0;
+    border-radius: 4px;
+    font-size: 14px;
+    padding: 0 10px;
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+  }
+
+  .custom-radio-with-list {
+    font-family: 'ChakraPetch-SemiBold', sans-serif;
+    border-radius: 0;
+    width: 100%;
+    height: auto; /* Let it expand based on content */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 15px;
+    border: 1px solid #E0E0E0;
+    color: #003865;
+    font-size: 14px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+  
+  .custom-radio-with-list ul {
+    margin: 5px 0 0 20px; /* Indent for the list */
+    padding-left: 10px;
+    list-style-type: disc; /* Add bullet points */
+  }
+  
+  .custom-radio-with-list li {
+    font-size: 12px; /* Slightly smaller font for list items */
+    color: #4D4D4D;
+  }
+  
+  .custom-radio-with-list .ant-radio-button-wrapper-checked {
+    background-color: #AE2D41;
+    color: white;
+    border-color: #AE2D41;
+  }
+  

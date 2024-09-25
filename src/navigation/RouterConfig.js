@@ -2,11 +2,15 @@ import React, { useEffect, useState } from "react";
 import { Switch, Route } from "react-router-dom";
 import { NotFound } from "navigation/NotFound";
 import HomePage from "pages/Home/HomePage";
-import { ROOT, ROUTE_ABOUT_US, ROUTE_COMPETITIONS, ROUTE_FACILITIES, ROUTE_REPRESENTATIVE, ROUTE_ACADEMY, ROUTE_LOGIN, ROUTE_SIGNUP, TEMPLATE_ROUTE_COMPETITION1, TEMPLATE_ROUTE_COMPETITION2 } from "constants/navigation_constants";
+import { ROOT, ROUTE_ABOUT_US, ROUTE_COMPETITIONS, ROUTE_FACILITIES, ROUTE_REPRESENTATIVE, ROUTE_ACADEMY, ROUTE_LOGIN, ROUTE_SIGNUP,
+   TEMPLATE_ROUTE_COMPETITION1, TEMPLATE_ROUTE_COMPETITION2, TEMPLATE_ROUTE_REGISTER1, TEMPLATE_ROUTE_REGISTER2 } from "constants/navigation_constants";
 import AboutPage from "pages/About/AboutPage";
 import AdvertisePage from "pages/Advertise/Advertise";
 import Competition1Page from "pages/Competition/Competition1Page";
 import Competition2Page from "pages/Competition/Competition2Page";
+import Register1Page from "pages/Register/Register1Page";
+import Register2Page from "pages/Register/Register2Page";
+
 import LegalPage from "pages/Legal/Legal";
 import ContactPage from "pages/Contact/Contact";
 import LoginPage from "pages/Login/LoginPage";
@@ -32,6 +36,8 @@ export const RouterConfig = () => {
 
         <Route exact path={TEMPLATE_ROUTE_COMPETITION1} component={Competition1Page}/>
         <Route exact path={TEMPLATE_ROUTE_COMPETITION2} component={Competition2Page}/>
+        <Route exact path={TEMPLATE_ROUTE_REGISTER1} component={Register1Page}/>
+        <Route exact path={TEMPLATE_ROUTE_REGISTER2} component={Register2Page}/>
         <Route path="*" component={NotFound} />
 
       </Switch>
